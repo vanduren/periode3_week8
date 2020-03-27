@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoer van een boek</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/extra.css">
+    <link rel="stylesheet" href="css/mode.css">
+</head>
+<body>
+<!-- A grey horizontal navbar that becomes vertical on small screens -->
+<nav class="navbar navbar-expand-sm bg-light">
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="javascript:void(0);" onclick="resetForm('frmBoek');">Reset form</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="javascript:void(0);" onclick="resetPage();">Reset pagina</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="javascript:void(0);" onclick="toggleDarkMode();">Toggle dark mode</a>
+      </li>
+    </ul>
+</nav>
+<div class="container-fluid">
+    <h3>Voeg een boek toe aan de lijst met boeken</h3>
+    <form id="frmBoek">
+        <div class="form-group">
+          <label for="email">Boek:</label>
+          <input type="text" class="form-control" placeholder="Geef titel boek" id="boek" name="boek">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Auteur:</label>
+          <input type="text" class="form-control" placeholder="Geef naam auteur" id="auteur" name="auteur">
+        </div>
+        <button type="button" class="btn btn-primary" onclick="voegBoekToe()">Voeg boek toe</button>
+    </form>
+    <br><hr>
+    <img src="img/boek.jpg" class="img-fluid img-rounded" alt="boek">
+    <br><br>
+    <div class="divTable">
+        <div class="headRow"><div class="divCell" align="center">boek</div><div class="divCell" align="center">auteur</div></div>
+        <div id="lijst">
+
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="js/reset.js"></script>
+<script src="js/write.js"></script>
+<script src="js/mode.js"></script>
+</body>
+</html>
