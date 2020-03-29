@@ -20,4 +20,5 @@
     display:table-column;
     width:200px;
     background-color:#ccc;
+    border: 1px solid #eee;
 }

@@ -28,8 +28,9 @@
     </ul>
 </nav>
 <div class="container-fluid">
-    <h3>Voeg een boek toe aan de lijst met boeken</h3>
-    <form id="frmBoek">
+    <h3 class="float-left">Voeg een boek toe aan de lijst met boeken</h3>
+    <img src="img/boek.jpg" class="img-fluid rounded float-right" alt="boek">
+    <form id="frmBoek" style="clear:both;">
         <div class="form-group">
           <label for="email">Boek:</label>
           <input type="text" class="form-control" placeholder="Geef titel boek" id="boek" name="boek">
@@ -41,8 +42,6 @@
         <button type="button" class="btn btn-primary" onclick="voegBoekToe()">Voeg boek toe</button>
     </form>
     <br><hr>
-    <img src="img/boek.jpg" class="img-fluid img-rounded" alt="boek">
-    <br><br>
     <div class="divTable">
         <div class="headRow"><div class="divCell" align="center">boek</div><div class="divCell" align="center">auteur</div></div>
         <div id="lijst">
